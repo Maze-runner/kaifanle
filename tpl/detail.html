@@ -1,3 +1,34 @@
 
 
-<h1>Detail page</h1>
+<div ng-include="'tpl/header.html'"></div>
+
+<div class="container">
+
+    <ul class="breadcrumb">
+        <li>
+            <a href="#/start">主页</a>
+        </li>
+        <li>详情</li>
+    </ul>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="page-header">
+                <h2>鱼香肉丝</h2>
+                <img src="img/p0281-l.jpg"/>
+                <div class="text-justify">
+                    <p>原材料：</p>
+                    <p>详情</p>
+                    <p>价格：￥36.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <div class="text-right">
+                <button class="btn btn-success" ng-click="jump('/order')">我要订餐</button>
+                <button class="btn btn-warning" ng-click="jump('/main')">我再看看</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-include="'tpl/footer.html'"></div>

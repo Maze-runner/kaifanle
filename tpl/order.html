@@ -1,3 +1,35 @@
 
+<div ng-include="'tpl/header.html'"></div>
 
-<h1>Order page</h1>
+<div class="container">
+    <div class="alert alert-info">
+        <form>
+            <div class="form-group">
+                <label for="uname" class="control-label">联系人：</label>
+                <input type="text" class="form-control" id="uname"/>
+            </div>
+            <div class="form-group">
+                <label>性别:</label>
+                <div class="radio-inline">
+                    <input type="radio" name="sex" value="1"/>先生
+                </div>
+                <div class="radio-inline">
+                    <input type="radio" name="sex" value="2"/>女士
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone">联系电话：</label>
+                <input type="text" id="phone" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label for="addr">收货地址：</label>
+                <textarea name="addrs" id="addr" cols="30" rows="5" class="form-control"></textarea>
+            </div>
+            <input ng-click="jump('/myOrder')" type="submit" class="btn btn-success btn-block" value="提交表单"/>
+        </form>
+    </div>
+</div>
+
+
+
+<div ng-include="'tpl/footer.html'"></div>
